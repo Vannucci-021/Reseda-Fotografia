@@ -1,0 +1,138 @@
+/* IMPORTAÇÃO DA FONTE */
+@font-face {
+    font-family: 'Barrio';
+    src: url('../fonts/fonte-titulos.otf');
+}
+
+@font-face {
+    font-family: 'Courier Std';
+    src: url('../fonts/fonte-paragrafos.otf');
+}
+
+@font-face {
+    font-family: 'Aktiv Grotesk';
+    src: url('../fonts/fonte-link.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fonte-family-titulos: 'Barrio';
+    --fonte-family-paragrafos: 'Courier Std';
+    --fonte-family-link: 'Aktiv Grotesk';
+    --titleBlack-color: rgb(40, 40, 42);
+    --titlesWhite-color: rgb(245, 245, 243);
+    --borderBottom-color: rgb(119, 119, 118);
+}
+
+a {
+    color: var(--titleBlack-color);
+}
+
+    li a{
+        text-decoration: none;
+    }
+
+/* Config Nav */
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    border-bottom: 1px solid black;
+}
+
+    .container-linkNav {
+        width: 45%;
+        margin-right: 30px;
+    }
+
+    .container-linkNav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 20px;
+    }
+
+    .container-linkNav ul li {
+        list-style-type: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: var(--titleBlack-color);
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    #text-nav a{
+        margin-left: 50px;
+        font-size: 15px;
+        text-transform: uppercase;
+        color: var(--titleBlack-color);
+        font-family: var(--fonte-family-link);
+        text-decoration: none;
+    }
+
+/* SEÇÃO SOFIA */
+#secao-sofia {
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid var(--borderBottom-color);
+}
+
+    .titlePrincipal h1{
+        font-family: var(--fonte-family-titulos);
+        font-size: 260px;
+        text-transform: uppercase;
+        color: var(--titleBlack-color);
+        text-align: center;
+    }
+
+    .container-sofia {
+        display: grid;
+        grid-auto-flow: column;
+        column-gap: 60px;
+        margin: 0 50px 50px 50px;
+    }
+
+        #containerImg-sofia img {
+            width: 50vw;
+            padding-bottom: 20px;
+        }
+
+    .titleAndText-sofia {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 88%;
+    }
+
+    #containerTitle-sofia h2 {
+        font-family: var(--fonte-family-titulos);
+        font-size: 30px;
+        text-transform: uppercase;
+        color: var(--titleBlack-color);
+    }
+
+    #text-sofia {
+        width: 95%;
+    }
+
+        #text-sofia p {
+            font-family: var(--fonte-family-paragrafos);
+            font-size: 16px;
+            color: var(--titleBlack-color);
+        }
+
+        #text-sofia p:last-child {
+            font-family: var(--fonte-family-paragrafos);
+            color: var(--titleBlack-color);
+            margin-top: 50px;
+        }
+
+/* SEÇÃO INVERNO */
+

@@ -3,53 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>RESEDA FOTOGRAFIA</title>
 </head>
 <body>
-    <nav>
-        <h4 id="titulo-nav">Reseda Fotografia</h4>
-        <ul>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Galeria</a></li>
-            <li><a href="#">Informações</a></li>
-            <li><a href="#">Agende uma sessão</a></li>
-            <li><a href="#">Entrar</a></li>
-        </ul> 
-    </nav>
-    <main> 
-        <div> <!-- Titulo Principal -->
-            <h1 class="titulo-principal">Reseda</h1>
+    <!-- MEU NAV -->
+    <nav class="nav-container"> 
+        <div id="text-nav">
+            <a href="#nav-container">Reseda Fotografia</a>
         </div>
-        <section class="secao-container">     <!-- Seção 1 -->
-            <div class="container">    <!-- Container da seção 1 -->
-                <div id="container-img1"> <!-- Primeira imagem -->
-                    <img src="assets/image-section1.jpeg" alt="Primeira Imagem" class="imagens-grandes">
-                </div>
-                <div class="titleAndText-container"> <!-- Meu h3 e parágrafo -->
-                    <h3 class="titulos-secoes">Fotografiz em la por sofia parazi</h3>
-                    <div> <!-- div parágrafo -->
-                        <p class="paragrafo-secoes">
-                            Sofia Parazi é fotógrafa, diretora de
-                            fotografia e diretora de arte de Los
-                            Angeles. A justaposição entre luz e sombra
-                            pontua o estilo característico dela. Para
-                            Sofia, as fotos são metáforas que
-                            transformam concreto em abstrato e
-                            mistificam o mundano.
-                        </p> <br> <br>
-                        <p class="paragrafo-secoes"><a href="#">→ Sobre Sofia</a></p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- LINKS NAV -->
+        <div class="container-linkNav">
+            <ul>
+                <li class="links-nav"><a href="#">Serviços</a></li>
+                <li class="links-nav"><a href="#">Galeria</a></li>
+                <li class="links-nav"><a href="#">Informações</a></li>
+                <li class="links-nav"><a href="#">Agende uma sessão</a></li>
+                <li class="links-nav"><a href="#">Entrar</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <section class="secao-container">
-            <div class="container">
-                <div class="titleAndText-container">
-                    <h3 class="titulos-secoes">Fotografiz em la por sofia parazi</h3>
-                    <div>
-                        <p class="paragrafo-secoes">
+    <main>
+        <!-- SEÇÃO SOFIA -->
+        <section id="secao-sofia">
+            <div class="titlePrincipal">
+                <h1>Reseda</h1>
+            </div>
+        <!-- CONTAINER IMG E TEXT -->
+            <div class="container-sofia">
+                <div id="containerImg-sofia">
+                    <img src="assets/colecaoSofia/img1-sofia.jpeg" alt="Imagem Inicial do Site">
+                </div>
+
+                <div class="titleAndText-sofia">
+                    <div id="containerTitle-sofia">
+                        <h2>Fotografia em la por sofia parazi</h2>
+                    </div>
+
+                    <div id="text-sofia">
+                        <p>
                             Sofia Parazi é fotógrafa, diretora de
                             fotografia e diretora de arte de Los
                             Angeles. A justaposição entre luz e sombra
@@ -58,18 +51,58 @@
                             transformam concreto em abstrato e
                             mistificam o mundano.
                         </p>
-                        
+
+                        <p> <a href="#">→ Sobre Sofia</a> </p>
                     </div>
-                </div>
-                <div id="container-img1">
-                    <img src="assets/image-section1.jpeg" alt="Primeira Imagem" class="imagens-grandes">
                 </div>
             </div>
         </section>
+
+        <!-- SEÇÃO INVERNO -->
+        <section id="secao-inverno">
+            <div class="titleAndText-inverno">
+                <div id="containerTitle-inverno">
+                    <h2>Coleção de Inverno</h2>
+                </div>
+
+                <div id="text-inverno">
+                    <p>
+                        As fotos são metáforas que transformam
+                        concreto em abstrato e mistificam o mundano.
+                        Seja claro, tenha confiança e não pense
+                        demais. O melhor da sua história é que ela
+                        continua evoluindo, e o site pode acompanhar
+                        essa evolução. Seu objetivo deve ser fazer
+                        com que ele seja ideal para este momento.
+                        Depois, ele vai se ajustando sozinho.
+                    </p>
+
+                    <p> <a href="#">→ Ver galeria completa</a> </p>
+                </div>
+                <div>
+                    <img src="assets/colecaoInverno/img2-inverno.png" alt="Imagem menor na seção de inverno">
+                </div>
+            </div>
+            <div id="containerImg-inverno">
+                <img src="assets/colecaoInverno/img1-inverno.jpeg" alt="Imagem Inicial inverno">
+            </div>
+        </section>
+
+        <section id="secao-outono">
+            
+        </section>
+        
+        <section id="secao-natureza">
+            
+        </section>
     </main>
-
     <footer>
+        <div id="linha1">
 
+        </div>
+        <div id="linha2">
+            <h1></h1>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
