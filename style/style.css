@@ -45,37 +45,37 @@ a {
     align-items: center;
     height: 85px;
     border-bottom: 1px solid black;
+    padding: 0 30px;
 }
 
-    .container-linkNav {
-        width: 45%;
-        margin-right: 30px;
-    }
-
-    .container-linkNav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-right: 20px;
-    }
-
-    .container-linkNav ul li {
-        list-style-type: none;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
-        color: var(--titleBlack-color);
-        text-transform: uppercase;
-        text-decoration: none;
-    }
-
-    #text-nav a{
-        margin-left: 50px;
+    /* Estilização do nome/logo */
+    .nav-logo a {
         font-size: 15px;
         text-transform: uppercase;
         color: var(--titleBlack-color);
         font-family: var(--fonte-family-link);
         text-decoration: none;
     }
+
+    /* Estilização da lista de links */
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px; /* Espaço entre os itens */
+    }
+
+        .nav-links li {
+            list-style-type: none;
+        }
+
+        .nav-links a {
+            font-family: var(--fonte-family-link);
+            font-size: 15px;
+            color: var(--titleBlack-color);
+            text-transform: uppercase;
+            text-decoration: none;
+        }
 
 /* SEÇÃO SOFIA */
 #secao-sofia {
@@ -84,7 +84,8 @@ a {
     border-bottom: 2px solid var(--borderBottom-color);
 }
 
-    .titlePrincipal h1{
+    /* Título principal */
+    .title-principal h1 {
         font-family: var(--fonte-family-titulos);
         font-size: 260px;
         text-transform: uppercase;
@@ -92,6 +93,7 @@ a {
         text-align: center;
     }
 
+    /* Layout da seção */
     .container-sofia {
         display: grid;
         grid-auto-flow: column;
@@ -99,40 +101,120 @@ a {
         margin: 0 50px 50px 50px;
     }
 
-        #containerImg-sofia img {
+        /* Imagem */
+        .image-container-sofia img {
             width: 50vw;
             padding-bottom: 20px;
         }
 
-    .titleAndText-sofia {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 88%;
-    }
-
-    #containerTitle-sofia h2 {
-        font-family: var(--fonte-family-titulos);
-        font-size: 30px;
-        text-transform: uppercase;
-        color: var(--titleBlack-color);
-    }
-
-    #text-sofia {
-        width: 95%;
-    }
-
-        #text-sofia p {
-            font-family: var(--fonte-family-paragrafos);
-            font-size: 16px;
-            color: var(--titleBlack-color);
+        /* Conteúdo textual */
+        .content-sofia {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 88%;
         }
 
-        #text-sofia p:last-child {
-            font-family: var(--fonte-family-paragrafos);
-            color: var(--titleBlack-color);
-            margin-top: 50px;
-        }
+            /* Título do conteúdo */
+            .title-sofia h2 {
+                font-family: var(--fonte-family-titulos);
+                font-size: 30px;
+                text-transform: uppercase;
+                color: var(--titleBlack-color);
+                text-align: left; /* Título do conteúdo alinhado à esquerda */
+            }
+
+            /* Texto */
+            .text-sofia {
+                width: 95%;
+                text-align: left; /* Alinhado à esquerda */
+            }
+
+            .text-sofia p {
+                font-family: var(--fonte-family-paragrafos);
+                font-size: 16px;
+                color: var(--titleBlack-color);
+                line-height: 1.6;
+            }
+
+            /* Último parágrafo */
+            .text-sofia p:last-child {
+                margin-top: 50px;
+            }
 
 /* SEÇÃO INVERNO */
+#secao-inverno {
+    width: 100%;
+    min-height: 100vh;
+    border-bottom: 2px solid var(--borderBottom-color);
+    margin-top: 70px;
+    padding: 50px 5%;
+}
 
+/* CONTEÚDO PRINCIPAL */
+.content-inverno {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+/* CONTAINER DE TEXTO E IMAGEM PEQUENA */
+.text-container-inverno {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 50%;
+}
+
+/* TÍTULO */
+.title-inverno h2 {
+    font-family: var(--fonte-family-titulos);
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--titleBlack-color);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* TEXTO */
+.text-container-inverno p {
+    font-family: var(--fonte-family-paragrafos);
+    font-size: 16px;
+    color: var(--titleBlack-color);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* LINK DE AÇÃO */
+.text-container-inverno a {
+    color: var(--fonte-family-link);
+}
+
+.text-container-inverno a:hover {
+    color: var(--hover-color);
+}
+
+/* IMAGEM PEQUENA */
+.image-small-inverno img {
+    max-width: 30%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* IMAGEM PRINCIPAL */
+.image-main-inverno img {
+    max-width: 90%;
+    height: auto;
+}
+
+/* IMAGEM INFERIOR */
+.image-bottom-inverno {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.image-bottom-inverno img {
+    max-width: 40%;
+    height: auto;
+    object-fit: cover;
+}
