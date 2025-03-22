@@ -181,17 +181,13 @@ a {
     font-family: var(--fonte-family-paragrafos);
     font-size: 16px;
     color: var(--titleBlack-color);
-    line-height: 1.6;
+    line-height: 1.3;
     margin-bottom: 20px;
 }
 
 /* LINK DE AÇÃO */
 .text-container-inverno a {
     color: var(--fonte-family-link);
-}
-
-.text-container-inverno a:hover {
-    color: var(--hover-color);
 }
 
 /* IMAGEM PEQUENA */
@@ -217,4 +213,59 @@ a {
     max-width: 40%;
     height: auto;
     object-fit: cover;
+}
+
+/* SEÇÃO OUTONO */
+#secao-outono {
+    width: 100%;
+    min-height: 100vh;
+    border-bottom: 2px solid var(--borderBottom-color);
+    margin-top: 70px;
+    padding: 50px 5%;
+}
+
+.content-outono {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-container-outono {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 60%;
+    height: 100vh;
+}
+
+.title-outono h2 {
+    font-family: var(--fonte-family-titulos);
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--titleBlack-color);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.text-container-outono p {
+    font-family: var(--fonte-family-paragrafos);
+    font-size: 16px;
+    color: var(--titleBlack-color);
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.text-container-outono a {
+    color: var(--fonte-family-link);
+}
+
+.image-small-outono img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.image-main-outono img {
+    max-width: 50%;
+    height: auto;
+    align-items: end;
 }
